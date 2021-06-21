@@ -23,7 +23,7 @@ public class ShoppingTrip {
 		Product product3 = new Product("Silver Locket", 60);
 		System.out.println(product1.toString());
 		System.out.println(product2.toString());
-		System.out.println(product3.toString());
+		System.out.println(product3.toString() + "\n");
 
 		
 		Shop shop = new Shop("Hidden Hideaway", 125);
@@ -31,17 +31,17 @@ public class ShoppingTrip {
 		shop.addProduct(product2);
 		shop.addProduct(product3);
 		
-		System.out.println(shop.toString());
+		System.out.println(shop.toString() + "\n");
 		
 		Customer customer = new Customer("Blackbeard", 100);
-		System.out.println(customer.toString());
+		System.out.println(customer.toString() + "\n");
 		
 		System.out.println("Welcome customer, to the " + shop.getName() + "!");
 		
 		String userInput="";
 		
 		do{
-			System.out.println("\nEnter an input. Enter 'add product' to add a product to your shopping basket. Enter 'exit' to exit.");
+			System.out.println("\nEnter an input. Enter 'add product' to add a product to your shopping basket, 'remove product', or 'purchase'. Enter 'exit' to exit.\n");
 			System.out.println(shop.toString() + "\n"  + customer.toString());
 			userInput = in.nextLine();
 			
